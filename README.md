@@ -30,6 +30,10 @@ northStar((data) => {
 9. Replace the `console.log(data)` from `step 7` with a working solution and log the answer.
 10. Paste the answer in the solution box to solve an Advent of Code problem fully in the browser. 
 
+# Demo Video
+
+[Demo Video](#)
+
 # Why use this?
 
 The purpose of this repo is to allow one to solve an Advent of Code problem, but writting code in their browsers console. One could just open up the console and begin entering JS code, but they would not have access to the problem input. One could just copy/paste the input, but why do that when one can use `NorthStar` to connect two browser tabs together using a [p2p connection](https://peerjs.com/) to obtain the input data.
