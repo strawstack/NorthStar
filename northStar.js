@@ -2,7 +2,7 @@ function runWithPeer(userFunction, second, third) {
   document.querySelectorAll(".northstar").forEach(e => e.remove());
   const script = document.createElement("script");
   script.type = "module";
-  script.className = 'northstar';
+  script.className = "northstar";
   const importPeer = `import {Peer} from "https://esm.sh/peerjs@1.5.4?bundle-deps";\n`;
   let funct = userFunction.toString()
     .replace("SECOND", second)
@@ -23,23 +23,23 @@ function northStar(userFunction, pid) {
         // Connect with peer and call userFunction with response
         runWithPeer(() => {
           const peer = new Peer();
-          peer.on('open', _ => {
+          peer.on("open", _ => {
             const conn = peer.connect("SECOND");
-            conn.on('data', (data) => {
+            conn.on("data", (data) => {
               THIRD
             });
           });
-        }, pid, buildFunctionCall(userFunction, 'data'));
+        }, pid, buildFunctionCall(userFunction, "data"));
 
     } else {
         // Listen for connection and respond with userFunction
         runWithPeer(() => {
           const peer = new Peer();
-          peer.on('open', (id) => {
+          peer.on("open", (id) => {
             console.log(id);
           });
-          peer.on('connection', (conn) => {
-            conn.on('open', () => {
+          peer.on("connection", (conn) => {
+            conn.on("open", () => {
                 conn.send(SECOND);
             });
         });
