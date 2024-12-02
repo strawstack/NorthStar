@@ -41,3 +41,7 @@ The purpose of this repo is to allow one to solve an Advent of Code problem, but
 # Also...
 
 This doesn't just work for Advent of Code. `NorthStar` can connect any two tabs. Replace the `return` statement in `step 5` to have a tab execute arbitrary code with access to the `DOM` when sending a response to other tabs that connect to it.
+
+# ...And Also...
+
+The two tabs don't have to be on the same computer or in the same local network. Run `step 5`, get the `peer_id`, and then run `step 7` on any other computer! 
