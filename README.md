@@ -38,10 +38,10 @@ northStar((data) => {
 
 The purpose of this repo is to allow one to solve an Advent of Code problem, but writting code in their browsers console. One could just open up the console and begin entering JS code, but they would not have access to the problem input. One could just copy/paste the input, but why do that when one can use `NorthStar` to connect two browser tabs together using a [p2p connection](https://peerjs.com/) to obtain the input data.
 
-# Also...
+# Also
 
 This doesn't just work for Advent of Code. `NorthStar` can connect any two tabs. Replace the `return` statement in `step 5` to have a tab execute arbitrary code with access to the `DOM` when sending a response to other tabs that connect to it.
 
-# ...And Also...
+# And Also
 
 The two tabs don't have to be on the same computer or in the same local network. Run `step 5`, get the `peer_id`, and then run `step 7` on any other computer! 
