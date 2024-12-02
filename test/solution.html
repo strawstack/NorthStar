@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solution</title>
+  </head>
+  <body>
+    <script type="module">
+        import {Peer} from "https://esm.sh/peerjs@1.5.4?bundle-deps";
+        const peer = new Peer();
+        peer.on('open', _ => {
+            const conn = peer.connect('8ec2a56b-7e0e-4f73-9df1-f68501c08924');
+            conn.on('data', (data) => {
+                console.log('Received', data);
+            });
+        });
+        
+    </script>
+  </body>
+</html>
