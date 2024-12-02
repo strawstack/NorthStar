@@ -32,7 +32,7 @@ northStar((data) => {
 
 # Demo Video
 
-[Demo Video](#)
+[Demo Video](https://youtu.be/WEhD42O58SE)
 
 # Why use this?
 
